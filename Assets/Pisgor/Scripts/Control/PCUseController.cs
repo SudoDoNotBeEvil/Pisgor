@@ -29,7 +29,7 @@ namespace Pisgor.Control {
                 _currentTrigger = null;
                 _useIcon.SetActive(false);
             }
-        }
+        } 
 
         private void Awake() {
             _csPlayerInput = new PCCharacterInputControl();
