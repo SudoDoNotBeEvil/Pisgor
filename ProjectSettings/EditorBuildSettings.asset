@@ -27,11 +27,8 @@ EditorBuildSettings:
     path: Assets/Pisgor/Game/Scenes/Street_1.unity
     guid: e2835cc3bd89e914f887f35b1e2b60f5
   - enabled: 1
-    path: Assets/Pisgor/Game/Scenes/Street_2.unity
+    path: Assets/Pisgor/Game/Scenes/Street_2loop.unity
     guid: 528613c8e6b764c06b7899d9f59959d0
-  - enabled: 1
-    path: Assets/Pisgor/Game/Scenes/Street_3loop.unity
-    guid: 6e4207be9a14340fdb796a1ff3015b82
   - enabled: 1
     path: Assets/Pisgor/Game/Scenes/Wood_1.unity
     guid: 14af325f29c76493eb7ad2df69a514f3

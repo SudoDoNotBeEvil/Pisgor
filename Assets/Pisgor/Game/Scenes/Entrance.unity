@@ -1126,7 +1126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timePlayerEnter: 0
-  _sceneToLoad: 12
+  _sceneToLoad: 11
   _spawnPoint: {fileID: 1518649938}
   _destination: 42001
   _targetDestination: 42001
