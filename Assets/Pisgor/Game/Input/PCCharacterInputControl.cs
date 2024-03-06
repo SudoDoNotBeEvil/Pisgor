@@ -278,28 +278,95 @@ public partial class @PCCharacterInputControl: IInputActionCollection2, IDisposa
         public static implicit operator InputActionMap(PlayerMovementActions set) { return set.Get(); }
         public void AddCallbacks(IPlayerMovementActions instance)
         {
-            if (m_Wrapper.m_PlayerMovementActionsCallbackInterface != null)
-            {
-                @Movement.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnMovement;
-                @Movement.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnMovement;
-                @Movement.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnMovement;
-                @Jump.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnJump;
-                @Jump.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnJump;
-                @Jump.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnJump;
-            }
-            m_Wrapper.m_PlayerMovementActionsCallbackInterface = instance;
-            if (instance != null)
-            {
-                @Movement.started += instance.OnMovement;
-                @Movement.performed += instance.OnMovement;
-                @Movement.canceled += instance.OnMovement;
-                @Jump.started += instance.OnJump;
-                @Jump.performed += instance.OnJump;
-                @Jump.canceled += instance.OnJump;
-            }
+            if (instance == null || m_Wrapper.m_PlayerMovementActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerMovementActionsCallbackInterfaces.Add(instance);
+            @Movement.started += instance.OnMovement;
+            @Movement.performed += instance.OnMovement;
+            @Movement.canceled += instance.OnMovement;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
+        }
+
+        private void UnregisterCallbacks(IPlayerMovementActions instance)
+        {
+            @Movement.started -= instance.OnMovement;
+            @Movement.performed -= instance.OnMovement;
+            @Movement.canceled -= instance.OnMovement;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
+        }
+
+        public void RemoveCallbacks(IPlayerMovementActions instance)
+        {
+            if (m_Wrapper.m_PlayerMovementActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPlayerMovementActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PlayerMovementActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PlayerMovementActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
         }
     }
     public PlayerMovementActions @PlayerMovement => new PlayerMovementActions(this);
+
+    // PlayerUse
+    private readonly InputActionMap m_PlayerUse;
+    private List<IPlayerUseActions> m_PlayerUseActionsCallbackInterfaces = new List<IPlayerUseActions>();
+    private readonly InputAction m_PlayerUse_Use;
+    private readonly InputAction m_PlayerUse_Drop;
+    public struct PlayerUseActions
+    {
+        private @PCCharacterInputControl m_Wrapper;
+        public PlayerUseActions(@PCCharacterInputControl wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Use => m_Wrapper.m_PlayerUse_Use;
+        public InputAction @Drop => m_Wrapper.m_PlayerUse_Drop;
+        public InputActionMap Get() { return m_Wrapper.m_PlayerUse; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PlayerUseActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayerUseActions instance)
+        {
+            if (instance == null || m_Wrapper.m_PlayerUseActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerUseActionsCallbackInterfaces.Add(instance);
+            @Use.started += instance.OnUse;
+            @Use.performed += instance.OnUse;
+            @Use.canceled += instance.OnUse;
+            @Drop.started += instance.OnDrop;
+            @Drop.performed += instance.OnDrop;
+            @Drop.canceled += instance.OnDrop;
+        }
+
+        private void UnregisterCallbacks(IPlayerUseActions instance)
+        {
+            @Use.started -= instance.OnUse;
+            @Use.performed -= instance.OnUse;
+            @Use.canceled -= instance.OnUse;
+            @Drop.started -= instance.OnDrop;
+            @Drop.performed -= instance.OnDrop;
+            @Drop.canceled -= instance.OnDrop;
+        }
+
+        public void RemoveCallbacks(IPlayerUseActions instance)
+        {
+            if (m_Wrapper.m_PlayerUseActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPlayerUseActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PlayerUseActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PlayerUseActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public PlayerUseActions @PlayerUse => new PlayerUseActions(this);
     private int m_PlayerMovementSchemeIndex = -1;
     public InputControlScheme PlayerMovementScheme
     {
