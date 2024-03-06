@@ -37,15 +37,6 @@ public partial class @PCCharacterInputControl: IInputActionCollection2, IDisposa
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Use"",
-                    ""type"": ""Button"",
-                    ""id"": ""fdff2fef-221b-421e-8cea-c42325218711"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Jump"",
                     ""type"": ""Value"",
                     ""id"": ""3aaa5b0f-1cd5-4332-984f-9446ab47f63b"",
@@ -124,28 +115,6 @@ public partial class @PCCharacterInputControl: IInputActionCollection2, IDisposa
                 },
                 {
                     ""name"": """",
-                    ""id"": ""7065000a-15b4-46c5-8056-32106f595676"",
-                    ""path"": ""<Keyboard>/e"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Use"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8bafbcb7-2b65-42c0-86d3-dc1f62991498"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Use"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""ea7211fc-e6e5-4f2c-a9bb-ab8408c35919"",
                     ""path"": ""<XInputController>/buttonWest"",
                     ""interactions"": ""Press"",
@@ -167,6 +136,54 @@ public partial class @PCCharacterInputControl: IInputActionCollection2, IDisposa
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""PlayerUse"",
+            ""id"": ""56a63cce-3b06-4a63-877c-fbc73a2ac232"",
+            ""actions"": [
+                {
+                    ""name"": ""Use"",
+                    ""type"": ""Button"",
+                    ""id"": ""d201fbe3-9091-43c1-9091-daf2e8b74ca1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Drop"",
+                    ""type"": ""Button"",
+                    ""id"": ""ef12d302-0204-4478-95ca-915f18749dbe"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""c27612f9-0b8d-4482-a46a-d3ae29ef1a4b"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Use"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a92f7870-61a8-48fc-bfcc-d26e9cdbf149"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Drop"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -180,8 +197,11 @@ public partial class @PCCharacterInputControl: IInputActionCollection2, IDisposa
         // PlayerMovement
         m_PlayerMovement = asset.FindActionMap("PlayerMovement", throwIfNotFound: true);
         m_PlayerMovement_Movement = m_PlayerMovement.FindAction("Movement", throwIfNotFound: true);
-        m_PlayerMovement_Use = m_PlayerMovement.FindAction("Use", throwIfNotFound: true);
         m_PlayerMovement_Jump = m_PlayerMovement.FindAction("Jump", throwIfNotFound: true);
+        // PlayerUse
+        m_PlayerUse = asset.FindActionMap("PlayerUse", throwIfNotFound: true);
+        m_PlayerUse_Use = m_PlayerUse.FindAction("Use", throwIfNotFound: true);
+        m_PlayerUse_Drop = m_PlayerUse.FindAction("Drop", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -244,14 +264,12 @@ public partial class @PCCharacterInputControl: IInputActionCollection2, IDisposa
     private readonly InputActionMap m_PlayerMovement;
     private List<IPlayerMovementActions> m_PlayerMovementActionsCallbackInterfaces = new List<IPlayerMovementActions>();
     private readonly InputAction m_PlayerMovement_Movement;
-    private readonly InputAction m_PlayerMovement_Use;
     private readonly InputAction m_PlayerMovement_Jump;
     public struct PlayerMovementActions
     {
         private @PCCharacterInputControl m_Wrapper;
         public PlayerMovementActions(@PCCharacterInputControl wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_PlayerMovement_Movement;
-        public InputAction @Use => m_Wrapper.m_PlayerMovement_Use;
         public InputAction @Jump => m_Wrapper.m_PlayerMovement_Jump;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMovement; }
         public void Enable() { Get().Enable(); }
@@ -265,9 +283,6 @@ public partial class @PCCharacterInputControl: IInputActionCollection2, IDisposa
             @Movement.started += instance.OnMovement;
             @Movement.performed += instance.OnMovement;
             @Movement.canceled += instance.OnMovement;
-            @Use.started += instance.OnUse;
-            @Use.performed += instance.OnUse;
-            @Use.canceled += instance.OnUse;
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
@@ -278,9 +293,6 @@ public partial class @PCCharacterInputControl: IInputActionCollection2, IDisposa
             @Movement.started -= instance.OnMovement;
             @Movement.performed -= instance.OnMovement;
             @Movement.canceled -= instance.OnMovement;
-            @Use.started -= instance.OnUse;
-            @Use.performed -= instance.OnUse;
-            @Use.canceled -= instance.OnUse;
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
@@ -301,6 +313,60 @@ public partial class @PCCharacterInputControl: IInputActionCollection2, IDisposa
         }
     }
     public PlayerMovementActions @PlayerMovement => new PlayerMovementActions(this);
+
+    // PlayerUse
+    private readonly InputActionMap m_PlayerUse;
+    private List<IPlayerUseActions> m_PlayerUseActionsCallbackInterfaces = new List<IPlayerUseActions>();
+    private readonly InputAction m_PlayerUse_Use;
+    private readonly InputAction m_PlayerUse_Drop;
+    public struct PlayerUseActions
+    {
+        private @PCCharacterInputControl m_Wrapper;
+        public PlayerUseActions(@PCCharacterInputControl wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Use => m_Wrapper.m_PlayerUse_Use;
+        public InputAction @Drop => m_Wrapper.m_PlayerUse_Drop;
+        public InputActionMap Get() { return m_Wrapper.m_PlayerUse; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PlayerUseActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayerUseActions instance)
+        {
+            if (instance == null || m_Wrapper.m_PlayerUseActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerUseActionsCallbackInterfaces.Add(instance);
+            @Use.started += instance.OnUse;
+            @Use.performed += instance.OnUse;
+            @Use.canceled += instance.OnUse;
+            @Drop.started += instance.OnDrop;
+            @Drop.performed += instance.OnDrop;
+            @Drop.canceled += instance.OnDrop;
+        }
+
+        private void UnregisterCallbacks(IPlayerUseActions instance)
+        {
+            @Use.started -= instance.OnUse;
+            @Use.performed -= instance.OnUse;
+            @Use.canceled -= instance.OnUse;
+            @Drop.started -= instance.OnDrop;
+            @Drop.performed -= instance.OnDrop;
+            @Drop.canceled -= instance.OnDrop;
+        }
+
+        public void RemoveCallbacks(IPlayerUseActions instance)
+        {
+            if (m_Wrapper.m_PlayerUseActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPlayerUseActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PlayerUseActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PlayerUseActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public PlayerUseActions @PlayerUse => new PlayerUseActions(this);
     private int m_PlayerMovementSchemeIndex = -1;
     public InputControlScheme PlayerMovementScheme
     {
@@ -313,7 +379,11 @@ public partial class @PCCharacterInputControl: IInputActionCollection2, IDisposa
     public interface IPlayerMovementActions
     {
         void OnMovement(InputAction.CallbackContext context);
-        void OnUse(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+    }
+    public interface IPlayerUseActions
+    {
+        void OnUse(InputAction.CallbackContext context);
+        void OnDrop(InputAction.CallbackContext context);
     }
 }

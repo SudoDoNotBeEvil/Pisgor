@@ -1,0 +1,182 @@
+{
+  "passages": [
+    {
+      "text": "You see 4 agressive-looking man in front of you.\n\n[[Pull out your gun -> ShootingStarts]]\n\n[[\"Hello!\"->Arguing]]\n[[\"Get out of my way if you want to live! (Intimidate)\"->IntimidationSuccess]]\n[[\"I guess I'll just need to go away.\"->GoAway]]\n[[\"Excuse me! How can I get to the library?\"->AskHimSomething]]",
+      "links": [
+        {
+          "name": "Pull out your gun ",
+          "link": " ShootingStarts",
+          "pid": "4"
+        },
+        {
+          "name": "\"Hello!\"",
+          "link": "Arguing",
+          "pid": "2"
+        },
+        {
+          "name": "\"Get out of my way if you want to live! (Intimidate)\"",
+          "link": "IntimidationSuccess",
+          "pid": "3"
+        },
+        {
+          "name": "\"I guess I'll just need to go away.\"",
+          "link": "GoAway",
+          "pid": "5"
+        },
+        {
+          "name": "\"Excuse me! How can I get to the library?\"",
+          "link": "AskHimSomething",
+          "pid": "9"
+        }
+      ],
+      "name": "Start",
+      "pid": "1",
+      "position": {
+        "x": "850",
+        "y": "350"
+      }
+    },
+    {
+      "text": "Get the hell out of here! If you want to live, of course.\n\n[[Pull out your gun -> ShootingStarts]]\n\n[[\"Get out of my way if you want to live! (Intimidate)\"->IntimidationSuccess]]\n[[\"I guess I'll just need to go away.\"->GoAway]]\n[[\"I've got something to offer. There is no need to shout.\" (Bribe) -> Bribe]]\n",
+      "links": [
+        {
+          "name": "Pull out your gun ",
+          "link": " ShootingStarts",
+          "pid": "4"
+        },
+        {
+          "name": "\"Get out of my way if you want to live! (Intimidate)\"",
+          "link": "IntimidationSuccess",
+          "pid": "3"
+        },
+        {
+          "name": "\"I guess I'll just need to go away.\"",
+          "link": "GoAway",
+          "pid": "5"
+        },
+        {
+          "name": "\"I've got something to offer. There is no need to shout.\" (Bribe) ",
+          "link": " Bribe",
+          "pid": "7"
+        }
+      ],
+      "name": "Arguing",
+      "pid": "2",
+      "position": {
+        "x": "600",
+        "y": "500"
+      }
+    },
+    {
+      "text": "Alright, alrigh! Just calm down! You can pass.\n\n[[\"You know what? I've changed my mind. I'll just kill you.\" -> ShootingStarts]]\n[[Pass through the cordon->Pass]]",
+      "links": [
+        {
+          "name": "\"You know what? I've changed my mind. I'll just kill you.\" ",
+          "link": " ShootingStarts",
+          "pid": "4"
+        },
+        {
+          "name": "Pass through the cordon",
+          "link": "Pass",
+          "pid": "6"
+        }
+      ],
+      "name": "IntimidationSuccess",
+      "pid": "3",
+      "position": {
+        "x": "1100",
+        "y": "500"
+      }
+    },
+    {
+      "text": "Dammit! Kill him!",
+      "name": " ShootingStarts",
+      "pid": "4",
+      "position": {
+        "x": "1000",
+        "y": "700"
+      }
+    },
+    {
+      "text": "You leave them behind.",
+      "name": "GoAway",
+      "pid": "5",
+      "position": {
+        "x": "800",
+        "y": "800"
+      }
+    },
+    {
+      "text": "",
+      "name": "Pass",
+      "pid": "6",
+      "position": {
+        "x": "1100",
+        "y": "1000"
+      }
+    },
+    {
+      "text": "Oh... You just don't look like a rich man. It will cost you...\n5000 credits.\n\n[[Give him the money -> Pay]]\n[[Pull out your gun -> ShootingStarts]]\n[[\"I guess I'll just need to go away.\"->GoAway]]",
+      "links": [
+        {
+          "name": "Give him the money ",
+          "link": " Pay",
+          "pid": "8"
+        },
+        {
+          "name": "Pull out your gun ",
+          "link": " ShootingStarts",
+          "pid": "4"
+        },
+        {
+          "name": "\"I guess I'll just need to go away.\"",
+          "link": "GoAway",
+          "pid": "5"
+        }
+      ],
+      "name": " Bribe",
+      "pid": "7",
+      "position": {
+        "x": "500",
+        "y": "675"
+      }
+    },
+    {
+      "text": "Allright, you can go.\n[[Go away ->Pass]]",
+      "links": [
+        {
+          "name": "Go away ",
+          "link": "Pass",
+          "pid": "6"
+        }
+      ],
+      "name": " Pay",
+      "pid": "8",
+      "position": {
+        "x": "600",
+        "y": "950"
+      }
+    },
+    {
+      "text": "FuckOff!!!!\n[[Pass]]",
+      "links": [
+        {
+          "name": "Pass",
+          "link": "Pass",
+          "pid": "6"
+        }
+      ],
+      "name": "AskHimSomething",
+      "pid": "9",
+      "position": {
+        "x": "1400",
+        "y": "500"
+      }
+    }
+  ],
+  "name": "HarloweStory",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.5.1",
+  "ifid": "C8CF7877-883A-41E1-8FF4-535466453C3D"
+}

@@ -39,6 +39,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5516153375798068459}
     m_Modifications:
+    - target: {fileID: 3792428353738571552, guid: 0894849d9db69d348972cefae4637670, type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3792428353738571553, guid: 0894849d9db69d348972cefae4637670, type: 3}
       propertyPath: m_Name
       value: Fader
