@@ -561,9 +561,14 @@ MonoBehaviour:
   _onPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
+  _onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
   _onPlayerExit:
     m_PersistentCalls:
       m_Calls: []
+  _triggerOnEnter: 1
+  _triggerOnUse: 1
 --- !u!212 &851706916
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1126,7 +1131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timePlayerEnter: 0
-  _sceneToLoad: 12
+  _sceneToLoad: 11
   _spawnPoint: {fileID: 1518649938}
   _destination: 42001
   _targetDestination: 42001
@@ -1449,9 +1454,14 @@ MonoBehaviour:
   _onPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
+  _onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
   _onPlayerExit:
     m_PersistentCalls:
       m_Calls: []
+  _triggerOnEnter: 1
+  _triggerOnUse: 1
 --- !u!212 &1944772534
 SpriteRenderer:
   m_ObjectHideFlags: 0

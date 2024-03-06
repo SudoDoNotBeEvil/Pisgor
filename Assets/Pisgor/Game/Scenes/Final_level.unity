@@ -182,7 +182,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.6148096, g: 0.8301887, b: 0.69518334, a: 1}
+  m_Color: {r: 0.8584906, g: 0.39279994, b: 0.40706432, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -224,7 +224,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &705806480
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -399,7 +399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &858315140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -741,7 +741,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1473806974
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -986,7 +986,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.6258, y: -14.5338, z: 0.05088051}
-  m_LocalScale: {x: 41.023464, y: 8.998491, z: 1}
+  m_LocalScale: {x: 43.074635, y: 8.998491, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450733551}
@@ -1071,9 +1071,14 @@ MonoBehaviour:
   _onPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
+  _onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
   _onPlayerExit:
     m_PersistentCalls:
       m_Calls: []
+  _triggerOnEnter: 1
+  _triggerOnUse: 1
 --- !u!212 &1944772534
 SpriteRenderer:
   m_ObjectHideFlags: 0

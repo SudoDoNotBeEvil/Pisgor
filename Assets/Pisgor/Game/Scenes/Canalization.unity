@@ -438,9 +438,14 @@ MonoBehaviour:
   _onPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
+  _onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
   _onPlayerExit:
     m_PersistentCalls:
       m_Calls: []
+  _triggerOnEnter: 1
+  _triggerOnUse: 1
 --- !u!212 &780652650
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -932,7 +937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2511965685045666117, guid: acb73b77ed2d45343812e660bd6dff5e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.46
+      value: 25.2
       objectReference: {fileID: 0}
     - target: {fileID: 2511965685045666117, guid: acb73b77ed2d45343812e660bd6dff5e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1226,9 +1231,14 @@ MonoBehaviour:
   _onPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
+  _onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
   _onPlayerExit:
     m_PersistentCalls:
       m_Calls: []
+  _triggerOnEnter: 1
+  _triggerOnUse: 1
 --- !u!212 &1944772534
 SpriteRenderer:
   m_ObjectHideFlags: 0

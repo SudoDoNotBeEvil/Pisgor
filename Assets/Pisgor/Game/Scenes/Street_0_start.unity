@@ -151,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 10477638}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -2.28, z: 0}
+  m_LocalPosition: {x: 2.04, y: -2.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -218,9 +218,14 @@ MonoBehaviour:
   _onPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
+  _onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
   _onPlayerExit:
     m_PersistentCalls:
       m_Calls: []
+  _triggerOnEnter: 1
+  _triggerOnUse: 1
 --- !u!212 &10477642
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -303,7 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timePlayerEnter: 0
-  _sceneToLoad: 11
+  _sceneToLoad: 10
   _spawnPoint: {fileID: 310505140}
   _destination: 42004
   _targetDestination: 42003
@@ -317,7 +322,7 @@ Transform:
   m_GameObject: {fileID: 310505138}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.74, y: 0.18, z: 0}
+  m_LocalPosition: {x: -3.57, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -420,9 +425,14 @@ MonoBehaviour:
   _onPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
+  _onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
   _onPlayerExit:
     m_PersistentCalls:
       m_Calls: []
+  _triggerOnEnter: 1
+  _triggerOnUse: 1
 --- !u!212 &541918959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -974,7 +984,7 @@ Transform:
   m_GameObject: {fileID: 1062607576}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07000017, y: -1.0199995, z: 0}
+  m_LocalPosition: {x: 2.1100001, y: -1.0199995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1634,9 +1644,14 @@ MonoBehaviour:
   _onPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
+  _onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
   _onPlayerExit:
     m_PersistentCalls:
       m_Calls: []
+  _triggerOnEnter: 1
+  _triggerOnUse: 1
 --- !u!212 &1944772534
 SpriteRenderer:
   m_ObjectHideFlags: 0

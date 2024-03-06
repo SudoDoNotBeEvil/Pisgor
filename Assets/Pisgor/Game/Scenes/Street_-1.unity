@@ -218,9 +218,14 @@ MonoBehaviour:
   _onPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
+  _onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
   _onPlayerExit:
     m_PersistentCalls:
       m_Calls: []
+  _triggerOnEnter: 1
+  _triggerOnUse: 1
 --- !u!212 &24347291
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -584,7 +589,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.4701987, g: 0.33268064, b: 0.7924528, a: 1}
+  m_Color: {r: 0.51117283, g: 0.4313813, b: 0.6981132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1177,9 +1182,14 @@ MonoBehaviour:
   _onPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
+  _onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
   _onPlayerExit:
     m_PersistentCalls:
       m_Calls: []
+  _triggerOnEnter: 1
+  _triggerOnUse: 1
 --- !u!212 &1394688817
 SpriteRenderer:
   m_ObjectHideFlags: 0
