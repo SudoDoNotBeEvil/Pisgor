@@ -19,6 +19,7 @@ namespace Pisgor.Inventories {
             _currentItem.transform.SetParent(transform);
 
             _currentItem.SetHolding(true);
+
         }
 
         public void Drop() { 
@@ -26,6 +27,7 @@ namespace Pisgor.Inventories {
                 return;
 
             _currentItem.transform.SetParent(null);
+            _currentItem.transform.parent = ItemManager.Instance?.transform;
 
             //set z to 0
             _currentItem.transform.position = new Vector3(_currentItem.transform.position.x,

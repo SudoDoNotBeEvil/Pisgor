@@ -12,6 +12,7 @@ using Pisgor.Movement;
 namespace Pisgor.SceneManagment {
     public class Portal : Triggerable {
         [SerializeField] int _sceneToLoad = -1;
+        [SerializeField] string _sceneToLoadName = "";
         [SerializeField] Transform _spawnPoint;
 
         [SerializeField] EDestinations _destination;
@@ -24,12 +25,16 @@ namespace Pisgor.SceneManagment {
             }
         }
 
-        public enum EDestinations { NONE, RED=42001, BLUE = 42002, GREEN = 42003, YELLOW = 42004};
+        public enum EDestinations { NONE, RED = 42001, BLUE = 42002, GREEN = 42003, YELLOW = 42004,
+        LEFT = 42010, RIGHT = 42011, UP = 42012, DOWN = 42013,
+        UPLEFT = 42014, UPRIGHT = 42015, DOWNLEFT = 42016, DOWNRIGHT = 42017,
+        CENTER = 42018
+        };
 
         public EDestinations GetDestination() => _destination;
 
         private void Awake() {
-            if(_spawnPoint == null)
+            if (_spawnPoint == null)
                 Debug.LogError("Portal spawnPoint was not assigned");
         }
 
@@ -44,18 +49,23 @@ namespace Pisgor.SceneManagment {
         }
 
         private IEnumerator Transition() {
-            if (_sceneToLoad < 0) {
+            if (_sceneToLoad < 0 && String.IsNullOrEmpty(_sceneToLoadName)) {
                 Debug.LogError($"Portal: scene to load is {_sceneToLoad}");
                 yield break;
             }
 
             Fader fader = FindObjectOfType<Fader>();
 
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
 
             yield return fader.CFadeOut();
-            yield return SceneManager.LoadSceneAsync(_sceneToLoad);
-Debug.Log("Scene loaded");
+
+            if(String.IsNullOrEmpty(_sceneToLoadName))
+                yield return SceneManager.LoadSceneAsync(_sceneToLoad);
+            else
+                yield return SceneManager.LoadSceneAsync(_sceneToLoadName);
+            
+            Debug.Log("Scene loaded");
             Portal otherPortal = GetOtherPortal();
             yield return new WaitForFixedUpdate();
             UpdatePlayer(otherPortal);
@@ -80,10 +90,10 @@ Debug.Log("Scene loaded");
         }
 
         private Portal GetOtherPortal() {
-            foreach (Portal portal in FindObjectsOfType<Portal>()){
+            foreach (Portal portal in FindObjectsOfType<Portal>()) {
                 if (portal == this) continue;
 
-                if(portal.GetDestination() == _targetDestination)
+                if (portal.GetDestination() == _targetDestination)
                     return portal;
             }
 
