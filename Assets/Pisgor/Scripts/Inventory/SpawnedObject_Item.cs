@@ -51,7 +51,7 @@ namespace Pisgor.Inventories {
 
             ItemSO so = Resources.Load<ItemSO>("Items/" + itemData.soName);
             if (so == null) { 
-                UnityEngine.Debug.LogError("Can't'load an item: ItemSO not found: " + itemData.soName);
+                UnityEngine.Debug.LogError($"Can't'load an item: ItemSO not found: {itemData.soName}, {data}");
                 return;
             }
 
