@@ -35,7 +35,7 @@ namespace Pisgor.Inventories {
         }
 
         public void SilentDestroyItem() { 
-            if (_currentItem == null)
+            if (_currentItem == null) 
                 return;
 
             var item = _currentItem;
