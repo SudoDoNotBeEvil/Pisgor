@@ -10,15 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c005687c0342b0c4f995b22305a464b9, type: 3}
-  m_Name: Item_Bucket with water
+  m_Name: Item_Mushroom
   m_EditorClassIdentifier: 
-  _itemName: Bucket
-<<<<<<< HEAD:Assets/Pisgor/Game/Resources/Items/Item_Bucket with water.asset
-  _itemDescription: JustAnEmptyBucket
-  _sprite: {fileID: 21300000, guid: 5652c3ffb9a08b445bc476c5476bc44f, type: 3}
-  _icon: {fileID: 21300000, guid: 5652c3ffb9a08b445bc476c5476bc44f, type: 3}
-=======
-  _itemDescription: Fullofwater
+  _itemName: Mushroom
+  _itemDescription: Eat to double jump
   _sprite: {fileID: 21300000, guid: a7e775a4f58f9d149862084a49b15588, type: 3}
   _icon: {fileID: 21300000, guid: a7e775a4f58f9d149862084a49b15588, type: 3}
->>>>>>> origin/EVGEN:Assets/Pisgor/Game/Inventory/Item_Bucket with water.asset

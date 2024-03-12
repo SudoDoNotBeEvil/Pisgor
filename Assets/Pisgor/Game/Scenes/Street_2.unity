@@ -844,7 +844,7 @@ GameObject:
   - component: {fileID: 1595551043}
   - component: {fileID: 1595551042}
   m_Layer: 0
-  m_Name: ItemSpawner (1)
+  m_Name: ItemSpwnCrowbar
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -959,7 +959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698dfb45b1ceb024cafedf7329b45544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _so: {fileID: 11400000, guid: 6d006f77a8eb2414192ee131030b0baa, type: 2}
+  _so: {fileID: 11400000, guid: 260339b507e4f4c7ca4ff4f592ec1dc5, type: 2}
   _itemPrefab: {fileID: 365038194036401077, guid: bf1a6012f5e754e419f38e4a32a4eea5, type: 3}
   _hasSpawned: 0
 --- !u!4 &1595551043
@@ -971,7 +971,7 @@ Transform:
   m_GameObject: {fileID: 1450733550}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.29, y: -2.22, z: -9.956779}
+  m_LocalPosition: {x: 10.68, y: -1.58, z: -9.956779}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

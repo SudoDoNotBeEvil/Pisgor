@@ -10,9 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c005687c0342b0c4f995b22305a464b9, type: 3}
-  m_Name: Item_crowbar
+  m_Name: Item_Crowbar
   m_EditorClassIdentifier: 
+<<<<<<< HEAD:Assets/Pisgor/Game/Resources/Items/Item_crowbar.asset
   _itemName: New Item
   _itemDescription: New Item
   _sprite: {fileID: 21300000, guid: 2d95a86b460252f4485e6ea32de747c0, type: 3}
   _icon: {fileID: 21300000, guid: 2d95a86b460252f4485e6ea32de747c0, type: 3}
+=======
+  _itemName: Crowbar
+  _itemDescription: Rusty Crowbar
+  _sprite: {fileID: 0}
+  _icon: {fileID: 0}
+>>>>>>> origin/EVGEN:Assets/Pisgor/Game/Inventory/Item_crowbar.asset
