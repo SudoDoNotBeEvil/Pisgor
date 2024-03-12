@@ -8,6 +8,7 @@ using System;
 
 [RequireComponent(typeof(ItemSpawner))]
 public class ItemSpawnerSaver : Saver {
+    //generate guid on item place in the unity scene if key is empty
 
     //generate GUID in editor for Key
     [ContextMenu("Generate GUID")]

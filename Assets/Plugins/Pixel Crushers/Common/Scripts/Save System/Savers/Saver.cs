@@ -98,8 +98,8 @@ namespace PixelCrushers
             string data = SaveSystem.currentSavedGameData.GetData("ItemPrefab(Clone)9a713fd4-6511-44c7-9adc-8eee8df0d02e");
             Debug.Log($"SaveSystem.currentSavedGameData.GetData(mykey) = {data}" );
             */
-            string data2 = SaveSystem.currentSavedGameData.GetData(key);
-            Debug.Log($"SaveSystem.currentSavedGameData.GetData({key}) = {data2}");
+            //string data2 = SaveSystem.currentSavedGameData.GetData(key);
+            //Debug.Log($"SaveSystem.currentSavedGameData.GetData({key}) = {data2}");
             
             if (restoreStateOnStart)
             {

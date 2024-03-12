@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemName: New Item
   _itemDescription: New Item
-  _sprite: {fileID: 0}
-  _icon: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 2d95a86b460252f4485e6ea32de747c0, type: 3}
+  _icon: {fileID: 21300000, guid: 2d95a86b460252f4485e6ea32de747c0, type: 3}

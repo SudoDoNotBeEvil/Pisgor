@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6699872722223896033}
-  - component: {fileID: 7340834194247843127}
+  - component: {fileID: 3658303843161903473}
   m_Layer: 0
-  m_Name: SceneItemManager
+  m_Name: PersistentInventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7340834194247843127
+--- !u!114 &3658303843161903473
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,12 +41,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1500868867498372001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c10e019b67b3e3458f6a72637d5523e, type: 3}
+  m_Script: {fileID: 11500000, guid: ac8315f8db8222f478334f4084c77e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_key: 0x0001
+  m_key: 
   m_appendSaverTypeToKey: 0
-  m_saveAcrossSceneChanges: 1
+  m_saveAcrossSceneChanges: 0
   m_restoreStateOnStart: 0
+  testString: initial
   _itemPrefab: {fileID: 365038194036401077, guid: bf1a6012f5e754e419f38e4a32a4eea5, type: 3}
-  _items: []
