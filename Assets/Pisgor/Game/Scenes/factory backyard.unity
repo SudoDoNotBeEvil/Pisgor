@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422b8c9bd4050314da9218c50a604787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 1623010098}
+  _target: {fileID: 0}
   _onPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -278,6 +278,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &334940321
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622871500570190401, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_destinationSceneName
+      value: Factory
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622871500570190401, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_spawnpointNameInDestinationScene
+      value: Spawnpoint from FactoryBackyard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605352385959742, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605352385959742, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605352385959742, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.13630754
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605352385959742, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605352385959742, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605352385959742, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605352385959742, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605352385959742, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605352385959742, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605352385959742, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824217977697837796, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_Name
+      value: PortalToFactory
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
 --- !u!1 &408697802
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422b8c9bd4050314da9218c50a604787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 713070737}
+  _target: {fileID: 0}
   _onPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -760,12 +825,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639304a97c7fae4e85f0900b85fb8cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timePlayerEnter: 0
-  _sceneToLoad: 1
-  _spawnPoint: {fileID: 713070738}
-  _destination: 42004
-  _targetDestination: 42001
-  faceRight: 1
+  m_requiredTag: Player
+  m_destinationSceneName: 
+  m_spawnpointNameInDestinationScene: 
+  m_onUsePortal:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &713070738
 Transform:
   m_ObjectHideFlags: 0
@@ -1187,6 +1252,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8991153223811143030, guid: acb73b77ed2d45343812e660bd6dff5e, type: 3}
+      propertyPath: m_key
+      value: spwnmngrFactoryBackyard_0001fx
+      objectReference: {fileID: 0}
     - target: {fileID: 9200424406129898263, guid: acb73b77ed2d45343812e660bd6dff5e, type: 3}
       propertyPath: m_Name
       value: Core
@@ -1361,6 +1430,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1450733551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1554460968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1554460969}
+  m_Layer: 0
+  m_Name: Spawnpoint from Factory
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1554460969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554460968}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.580372, y: -0.35888135, z: -0.13630754}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1623010097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,12 +1490,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639304a97c7fae4e85f0900b85fb8cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timePlayerEnter: 0
-  _sceneToLoad: 3
-  _spawnPoint: {fileID: 1623010099}
-  _destination: 42001
-  _targetDestination: 42003
-  faceRight: 1
+  m_requiredTag: Player
+  m_destinationSceneName: 
+  m_spawnpointNameInDestinationScene: 
+  m_onUsePortal:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1623010099
 Transform:
   m_ObjectHideFlags: 0
@@ -1442,12 +1542,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639304a97c7fae4e85f0900b85fb8cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timePlayerEnter: 0
-  _sceneToLoad: 0
-  _spawnPoint: {fileID: 1650967465}
-  _destination: 42003
-  _targetDestination: 42001
-  faceRight: 1
+  m_requiredTag: Player
+  m_destinationSceneName: 
+  m_spawnpointNameInDestinationScene: 
+  m_onUsePortal:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1650967465
 Transform:
   m_ObjectHideFlags: 0
@@ -1710,7 +1810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422b8c9bd4050314da9218c50a604787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 1650967464}
+  _target: {fileID: 0}
   _onPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -1846,3 +1946,5 @@ SceneRoots:
   - {fileID: 713070738}
   - {fileID: 1623010099}
   - {fileID: 1176720724}
+  - {fileID: 334940321}
+  - {fileID: 1554460969}
