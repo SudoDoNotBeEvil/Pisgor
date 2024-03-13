@@ -13,6 +13,7 @@ namespace Pisgor.Inventories {
         [SerializeField] Trigger _trigger = null;
 
         public ItemSO SO { get { return _so; } }
+        public bool IsHolding { get; private set; } = false;
 
         public void SetSO(ItemSO so) {
             CheckSpriteRenderer();
@@ -40,7 +41,7 @@ namespace Pisgor.Inventories {
         }
 
         internal void SetHolding(bool isHolding) {
-            Debug.LogWarning("throw new NotImplementedException()");
+            IsHolding = isHolding;
         }
     }
 }

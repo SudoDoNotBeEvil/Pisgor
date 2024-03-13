@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4467091800262492229}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0618, y: -0.4016, z: 9.956779}
   m_LocalScale: {x: 1.1236, y: 0.1967, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4467091800266600741}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4467091800262492235
 SpriteRenderer:
@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4467091800266600741}
   - component: {fileID: 4467091800266600742}
+  - component: {fileID: 4960692099427508810}
   m_Layer: 0
   m_Name: ItemSpawner
   m_TagString: Untagged
@@ -108,6 +109,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4467091800266600743}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.99, y: -2.22, z: -9.956779}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -115,7 +117,6 @@ Transform:
   m_Children:
   - {fileID: 4467091800262492228}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4467091800266600742
 MonoBehaviour:
@@ -129,6 +130,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698dfb45b1ceb024cafedf7329b45544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _so: {fileID: 11400000, guid: 23b1cca023568c641b693c640c4d184d, type: 2}
+  _so: {fileID: 11400000, guid: 6d006f77a8eb2414192ee131030b0baa, type: 2}
   _itemPrefab: {fileID: 365038194036401077, guid: bf1a6012f5e754e419f38e4a32a4eea5, type: 3}
   _hasSpawned: 0
+--- !u!114 &4960692099427508810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4467091800266600743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e5e83902d60e5458e0778ac9c273b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: 
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0

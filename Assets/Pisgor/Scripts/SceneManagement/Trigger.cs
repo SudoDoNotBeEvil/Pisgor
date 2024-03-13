@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 using Pisgor.Control;
+using Unity.XR.Oculus.Input;
 
 namespace Pisgor.Interaction {
     //UnityEvent subclass with a GameObject parameter
@@ -27,17 +28,23 @@ namespace Pisgor.Interaction {
             if (!other.CompareTag("Player"))
                 return;
 
+            Debug.Log("OnTriggerEnter2D");
+
             _onPlayerEnter.Invoke(other.gameObject);
             _target?.OnPlayerEnter(other.gameObject);
 
-            if (_triggerOnEnter)
+            if (_triggerOnEnter) {
                 _target?.OnTrig(other.gameObject);
-            else if (_triggerOnUse) { 
+                _onTrigger.Invoke(other.gameObject);
+            }
+            else if (_triggerOnUse) {
                 other.GetComponent<PCUseController>()?.SetTrigger(this);
             }
         }
 
         public void Use(GameObject go) {
+            Debug.Log("UsePortal");
+
             if (_triggerOnUse) {
                 _target?.OnTrig(go);
                 _onTrigger.Invoke(go);
