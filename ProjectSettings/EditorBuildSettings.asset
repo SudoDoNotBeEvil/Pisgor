@@ -50,7 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Pisgor/Game/Scenes/Final_level.unity
     guid: 10509a56a5647414fafa3dc36c77d106
-  - enabled: 1
+  - enabled: 0
     path: Assets/Pisgor/Game/Scenes/TestScenes/TestScene_1.unity
     guid: fee73040796f58c47a2927974017cf0e
   - enabled: 1
@@ -62,4 +62,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Pisgor/Game/Scenes/TestScenes/TestScene_4.unity
     guid: b3d0a17ff09f9684da399ff33de46f69
+  - enabled: 1
+    path: Assets/Plugins/Pixel Crushers/Dialogue System/Demo/Scenes/DemoScene2.unity
+    guid: d94b3c97c9dfe0d4e8ff547bb0406174
+  - enabled: 1
+    path: Assets/Plugins/Pixel Crushers/Dialogue System/Demo/Scenes/DemoScene1.unity
+    guid: 955abf6400389cf4f8e68ac194db83e0
   m_configObjects: {}
