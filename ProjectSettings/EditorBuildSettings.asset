@@ -35,7 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Pisgor/Game/Scenes/Wood_1.unity
     guid: 14af325f29c76493eb7ad2df69a514f3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Pisgor/Game/Scenes/Wood_2.unity
     guid: bc16f0c2318b646c59ae729b539b1351
   - enabled: 1

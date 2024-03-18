@@ -15,7 +15,7 @@ MonoBehaviour:
   runSpeed: 10
   walkSpeed: 3
   crouchSpeed: 1
-  jumpForce: 15
+  jumpForce: 20
   groundCheckRadius: 0.2
   airSpeed: 6
   groundControl: 0.1
