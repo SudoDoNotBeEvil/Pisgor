@@ -831,12 +831,24 @@ PrefabInstance:
       value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.22374731
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.22374731
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.22374731
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01
+      value: -0.011187408
       objectReference: {fileID: 0}
     - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: -0.17228545
       objectReference: {fileID: 0}
     - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1255,6 +1267,8 @@ MonoBehaviour:
   sendMessages: []
   barkSource: 0
   barkConversation: 
+  barkEntryID: -1
+  barkEntryTitle: 
   barkText: 
   barkTextSequence: 
   barker: {fileID: 0}
@@ -1268,8 +1282,10 @@ MonoBehaviour:
   conversationActor: {fileID: 0}
   startConversationEntryID: -1
   startConversationEntryTitle: 
+  overrideDialogueUI: {fileID: 0}
   exclusive: 0
   replace: 0
+  queue: 0
   skipIfNoValidEntries: 0
   preventRestartOnSameFrameEnded: 0
   stopConversationOnTriggerExit: 0
@@ -1329,7 +1345,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f95784aa023ad0a49bde2b3503e83cf3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1349,8 +1365,8 @@ Transform:
   m_GameObject: {fileID: 966302670}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.23, y: -1.17, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 4.27, y: -1.4, z: 0}
+  m_LocalScale: {x: 4.4693274, y: 4.4693274, z: 4.4693274}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 381654296}
