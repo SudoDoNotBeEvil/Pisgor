@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 935899b62f48ae5498594680ed17d133, type: 3}
-  m_Name: Demo Database
+  m_Name: Demo Database (Auto-Backup)
   m_EditorClassIdentifier: 
   version: 1.5.1.0
   author: Pixel Crushers
@@ -1756,33 +1756,33 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 5
         type: 5
-        typeString: CustomFieldType_Actor
+        typeString: 
       - title: Conversant
         value: 1
         type: 5
-        typeString: CustomFieldType_Actor
+        typeString: 
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: This was one of the evil emperor's guards.
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Video File
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 'Camera(Down,,1);
 
           Delay({{end}})'
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -1975,7 +1975,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1.5099995
+    canvasZoom: 1
   - id: 5
     fields:
     - title: Title

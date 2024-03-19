@@ -1,0 +1,163 @@
+
+
+{
+  "passages": [
+    {
+      "text": "",
+      "name": "NotOpenYet",
+      "pid": "1",
+      "position": {
+        "x": "1450",
+        "y": "525"
+      }
+    },
+    {
+      "text": "Как бы ты ни пытался раскорячиться, всё безрезультатно.",
+      "name": "Попробовать открыть",
+      "pid": "2",
+      "position": {
+        "x": "775",
+        "y": "750"
+      }
+    },
+    {
+      "text": "Ты просовываешь лом в щель и наваливаешься всем своим весом.\n\n[[(IsOpenAlready)]]\n\nConditions: (passthrough)\nVariable[\"HasCrowbar\"] == true\n\nScript:\nVariable[\"HasCrowbar\"] = false\nVariable[\"IsOen\"] = true\nUnhandledTwineMacro(\"(DestroyHeldObject)\")",
+      "links": [
+        {
+          "name": "(IsOpenAlready)",
+          "link": "(IsOpenAlready)",
+          "pid": "8"
+        }
+      ],
+      "name": "Использовать ломик",
+      "pid": "3",
+      "position": {
+        "x": "925",
+        "y": "750"
+      }
+    },
+    {
+      "text": "This is start node\n\n[[(NotOpenYet)]]\n[[(IsOpenAlready)]]\n\nConditions: (passthrough)\nVariable[\"SaidHello\"] == true",
+      "links": [
+        {
+          "name": "(NotOpenYet)",
+          "link": "(NotOpenYet)",
+          "pid": "5"
+        },
+        {
+          "name": "(IsOpenAlready)",
+          "link": "(IsOpenAlready)",
+          "pid": "8"
+        }
+      ],
+      "name": "(StartNode)",
+      "pid": "4",
+      "position": {
+        "x": "975",
+        "y": "375"
+      }
+    },
+    {
+      "text": "Ты видишь огромную чугунную крышку люка\n[[Попробовать открыть]]\n[[Использовать ломик]]\n\nConditions: (passthrough)\nVariable[\"isOpen\"] == false",
+      "links": [
+        {
+          "name": "Попробовать открыть",
+          "link": "Попробовать открыть",
+          "pid": "2"
+        },
+        {
+          "name": "Использовать ломик",
+          "link": "Использовать ломик",
+          "pid": "3"
+        }
+      ],
+      "name": "(NotOpenYet)",
+      "pid": "5",
+      "position": {
+        "x": "875",
+        "y": "575"
+      }
+    },
+    {
+      "text": "SetTestVars\n\n[[(Greeting)]]\n[[(StartNode)]]\n\nSctipt:\nVariable[\"IsOpen\"] = true\nVariable[\"SaidHello\"] = false\nVariable[\"HasCrowbar\"] = false\nUnhandledTwineMacro(\"(CheckCrowbar)\")\n",
+      "links": [
+        {
+          "name": "(Greeting)",
+          "link": "(Greeting)",
+          "pid": "7"
+        },
+        {
+          "name": "(StartNode)",
+          "link": "(StartNode)",
+          "pid": "4"
+        }
+      ],
+      "name": "SetTestVars",
+      "pid": "6",
+      "position": {
+        "x": "975",
+        "y": "75"
+      }
+    },
+    {
+      "text": "Ой, а что это на земле?\nДа это же огромный, круглый, чугунный, канализационный люк!\n\n[[(StartNode)]]\n\nConditions: (passthrough)\nVariable[\"SaidHello\"] == false\n\nScript:\nVariable[\"SaidHello\"] = true",
+      "links": [
+        {
+          "name": "(StartNode)",
+          "link": "(StartNode)",
+          "pid": "4"
+        }
+      ],
+      "name": "(Greeting)",
+      "pid": "7",
+      "position": {
+        "x": "850",
+        "y": "250"
+      }
+    },
+    {
+      "text": "Пока бездна смотрит в тебя, ты всматриваешься в бездну.\n\n[[Спуститься | ClimbDownTheWell]]\n[[Уйти | GoAway]]\n\nConditions: (passthrough)\nVariable[\"isOpen\"] == true",
+      "links": [
+        {
+          "name": "Спуститься | ClimbDownTheWell",
+          "link": "Спуститься | ClimbDownTheWell",
+          "broken": true
+        },
+        {
+          "name": "Уйти | GoAway",
+          "link": "Уйти | GoAway",
+          "broken": true
+        }
+      ],
+      "name": "(IsOpenAlready)",
+      "pid": "8",
+      "position": {
+        "x": "1200",
+        "y": "750"
+      }
+    },
+    {
+      "text": "Ты лезешь во тьму.\n\nSctipt:\nUnhandledTwineMacro(\"(TeleportDownTheWhell)\")",
+      "name": " ClimbDownTheWell",
+      "pid": "9",
+      "position": {
+        "x": "1125",
+        "y": "950"
+      }
+    },
+    {
+      "text": "Ты уходишь",
+      "name": " GoAway",
+      "pid": "10",
+      "position": {
+        "x": "1275",
+        "y": "950"
+      }
+    }
+  ],
+  "name": "Люк",
+  "startnode": "6",
+  "creator": "Twine",
+  "creator-version": "2.5.1",
+  "ifid": "DB3D7792-23F0-4B09-ABE1-87B2CD176281"
+}
