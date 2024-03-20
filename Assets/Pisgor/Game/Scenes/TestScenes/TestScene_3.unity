@@ -464,6 +464,8 @@ MonoBehaviour:
       m_Calls: []
   _triggerOnEnter: 1
   _triggerOnUse: 1
+  _requiresItem: 0
+  _requiredItem: {fileID: 0}
 --- !u!212 &282441891
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2401,6 +2403,8 @@ MonoBehaviour:
       m_Calls: []
   _triggerOnEnter: 1
   _triggerOnUse: 1
+  _requiresItem: 0
+  _requiredItem: {fileID: 0}
 --- !u!212 &1944772534
 SpriteRenderer:
   m_ObjectHideFlags: 0
