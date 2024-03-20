@@ -61,6 +61,9 @@ namespace Pisgor.Inventories {
             return true;
         }
 
+        public bool HoldsItem(ItemSO item) {
+            return CurrentItemSO == item;
+        }
 
         #region PixelCrashersSaver
         public override void ApplyData(string data) {

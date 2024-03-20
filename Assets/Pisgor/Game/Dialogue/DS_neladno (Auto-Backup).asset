@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 935899b62f48ae5498594680ed17d133, type: 3}
-  m_Name: DS_neladno
+  m_Name: DS_neladno (Auto-Backup)
   m_EditorClassIdentifier: 
   version: 0.001
   author: Neladno
@@ -101,41 +101,7 @@ MonoBehaviour:
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
-  items:
-  - id: 1
-    fields:
-    - title: Name
-      value: OpenTheSewer
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: '"I need to get down the sewer"'
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Success Description
-      value: The sewer is open
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Failure Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: State
-      value: unassigned
-      type: 0
-      typeString: CustomFieldType_QuestState
-    - title: Is Item
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Trackable
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
+  items: []
   locations: []
   variables:
   - id: 1
@@ -145,9 +111,9 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
-      type: 0
-      typeString: CustomFieldType_Text
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
     - title: Description
       value: 
       type: 0
@@ -159,9 +125,9 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
-      type: 0
-      typeString: CustomFieldType_Text
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
     - title: Description
       value: 
       type: 0
@@ -173,9 +139,9 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
-      type: 0
-      typeString: CustomFieldType_Text
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
     - title: Description
       value: 
       type: 0
@@ -1015,7 +981,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 3
@@ -1610,7 +1576,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 3
@@ -1665,7 +1631,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 3
@@ -1720,7 +1686,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 3
@@ -2458,8 +2424,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 654.20154, y: 165.45682}
-    canvasZoom: 0.73000026
+    canvasScrollPosition: {x: 422.28784, y: 13.513428}
+    canvasZoom: 0.37000045
   - id: 4
     fields:
     - title: Title
@@ -2511,11 +2477,11 @@ MonoBehaviour:
       - title: Title
         value: START
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 1
         type: 5
@@ -2527,21 +2493,21 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 4
@@ -2557,8 +2523,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1499.0243
-        y: 103.17085
+        x: 1410
+        y: 480
         width: 160
         height: 30
     - id: 1
@@ -2566,11 +2532,11 @@ MonoBehaviour:
       - title: Title
         value: NotOpenYet
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 2
         type: 5
@@ -2582,15 +2548,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -2606,8 +2572,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1337.2728
-        y: 439.54553
+        x: 1450
+        y: 525
         width: 160
         height: 30
     - id: 2
@@ -2616,11 +2582,11 @@ MonoBehaviour:
         value: "\u041F\u043E\u043F\u0440\u043E\u0431\u043E\u0432\u0430\u0442\u044C
           \u043E\u0442\u043A\u0440\u044B\u0442\u044C"
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 2
         type: 5
@@ -2632,17 +2598,17 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: "\u041A\u0430\u043A \u0431\u044B \u0442\u044B \u043D\u0438 \u043F\u044B\u0442\u0430\u043B\u0441\u044F
           \u0440\u0430\u0441\u043A\u043E\u0440\u044F\u0447\u0438\u0442\u044C\u0441\u044F,
           \u0432\u0441\u0451 \u0431\u0435\u0437\u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u043D\u043E."
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -2668,11 +2634,11 @@ MonoBehaviour:
         value: "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C
           \u043B\u043E\u043C\u0438\u043A"
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 2
         type: 5
@@ -2684,17 +2650,17 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: "\u0422\u044B \u043F\u0440\u043E\u0441\u043E\u0432\u044B\u0432\u0430\u0435\u0448\u044C
           \u043B\u043E\u043C \u0432 \u0449\u0435\u043B\u044C \u0438 \u043D\u0430\u0432\u0430\u043B\u0438\u0432\u0430\u0435\u0448\u044C\u0441\u044F
           \u0432\u0441\u0435\u043C \u0441\u0432\u043E\u0438\u043C \u0432\u0435\u0441\u043E\u043C."
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -2722,8 +2688,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 989.8937
-        y: 751.0638
+        x: 925
+        y: 750
         width: 160
         height: 30
     - id: 4
@@ -2731,11 +2697,11 @@ MonoBehaviour:
       - title: Title
         value: (StartNode)
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 2
         type: 5
@@ -2747,15 +2713,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: This is start node
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -2776,10 +2742,9 @@ MonoBehaviour:
         destinationDialogueID: 8
         isConnector: 0
         priority: 2
-      conditionsString: 'Variable["SaidHello"] == true
+      conditionsString: '
 
-        CurrentQuestState("OpenTheSewer")
-        ~= "completed"'
+        Variable["SaidHello"] == true'
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -2795,11 +2760,11 @@ MonoBehaviour:
       - title: Title
         value: (NotOpenYet)
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 2
         type: 5
@@ -2811,17 +2776,17 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: "\u0422\u044B \u0432\u0438\u0434\u0438\u0448\u044C \u043E\u0433\u0440\u043E\u043C\u043D\u0443\u044E
           \u0447\u0443\u0433\u0443\u043D\u043D\u0443\u044E \u043A\u0440\u044B\u0448\u043A\u0443
           \u043B\u044E\u043A\u0430"
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -2905,27 +2870,25 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      - originConversationID: 4
-        originDialogueID: 6
-        destinationConversationID: 4
-        destinationDialogueID: 8
-        isConnector: 0
-        priority: 2
       conditionsString: 
-      userScript: 'Variable["IsOpen"] = false
+      userScript: '
 
-        Variable["SaidHello"] = false
+        Variable["IsOpen"] = false
 
-        Variable["HasCrowbar"]
-        = PlayerHasItem("Crowbar")
+        Variable["SaidHello"]
+        = false
 
-        SetQuestState("OpenTheSewer", "started")'
+        Variable["HasCrowbar"] = false
+
+        UnhandledTwineMacro("(CheckCrowbar)");
+
+'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 975
+        x: 976.0989
         y: 75
         width: 160
         height: 30
@@ -2934,11 +2897,11 @@ MonoBehaviour:
       - title: Title
         value: (Greeting)
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 2
         type: 5
@@ -2950,7 +2913,7 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: "\u041E\u0439, \u0430 \u0447\u0442\u043E \u044D\u0442\u043E \u043D\u0430
           \u0437\u0435\u043C\u043B\u0435?\n\u0414\u0430 \u044D\u0442\u043E \u0436\u0435
@@ -2958,11 +2921,11 @@ MonoBehaviour:
           \u0447\u0443\u0433\u0443\u043D\u043D\u044B\u0439, \u043A\u0430\u043D\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0439
           \u043B\u044E\u043A!"
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -2977,10 +2940,9 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      conditionsString: 'Variable["SaidHello"] == false
+      conditionsString: '
 
-        CurrentQuestState("OpenTheSewer")
-        ~= "completed"'
+        Variable["SaidHello"] == false'
       userScript: Variable["SaidHello"] = true
       onExecute:
         m_PersistentCalls:
@@ -2996,11 +2958,11 @@ MonoBehaviour:
       - title: Title
         value: (IsOpenAlready)
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 2
         type: 5
@@ -3012,17 +2974,17 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: "\u041F\u043E\u043A\u0430 \u0431\u0435\u0437\u0434\u043D\u0430 \u0441\u043C\u043E\u0442\u0440\u0438\u0442
           \u0432 \u0442\u0435\u0431\u044F, \u0442\u044B \u0432\u0441\u043C\u0430\u0442\u0440\u0438\u0432\u0430\u0435\u0448\u044C\u0441\u044F
           \u0432 \u0431\u0435\u0437\u0434\u043D\u0443."
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -3043,15 +3005,17 @@ MonoBehaviour:
         destinationDialogueID: 14
         isConnector: 0
         priority: 2
-      conditionsString: CurrentQuestState("OpenTheSewer") == "completed"
+      conditionsString: '
+
+        Variable["isOpen"] == true'
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1205.3192
-        y: 792.5532
+        x: 1200
+        y: 750
         width: 160
         height: 30
     - id: 9
@@ -3059,11 +3023,11 @@ MonoBehaviour:
       - title: Title
         value: ' ClimbDownTheWell'
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 2
         type: 5
@@ -3075,15 +3039,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: "\u0422\u044B \u043B\u0435\u0437\u0435\u0448\u044C \u0432\u043E \u0442\u044C\u043C\u0443.\n\nSctipt:\nUnhandledTwineMacro(\"(TeleportDownTheWhell)\")"
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -3108,11 +3072,11 @@ MonoBehaviour:
       - title: Title
         value: ' GoAway'
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 2
         type: 5
@@ -3124,15 +3088,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: "\u0422\u044B \u0443\u0445\u043E\u0434\u0438\u0448\u044C"
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -3158,11 +3122,11 @@ MonoBehaviour:
         value: "\u041F\u043E\u043F\u0440\u043E\u0431\u043E\u0432\u0430\u0442\u044C
           \u043E\u0442\u043A\u0440\u044B\u0442\u044C Link 5"
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 1
         type: 5
@@ -3174,22 +3138,22 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: "\u041F\u043E\u043F\u0440\u043E\u0431\u043E\u0432\u0430\u0442\u044C
           \u043E\u0442\u043A\u0440\u044B\u0442\u044C"
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 4
@@ -3205,8 +3169,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 671.88074
-        y: 658.5321
+        x: 915
+        y: 620
         width: 160
         height: 30
     - id: 12
@@ -3215,11 +3179,11 @@ MonoBehaviour:
         value: "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C
           \u043B\u043E\u043C\u0438\u043A Link 5"
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 1
         type: 5
@@ -3231,22 +3195,22 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C
           \u043B\u043E\u043C\u0438\u043A"
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 4
@@ -3255,15 +3219,15 @@ MonoBehaviour:
         destinationDialogueID: 3
         isConnector: 0
         priority: 2
-      conditionsString: PlayerHasItem("Item_Crowbar")
+      conditionsString: 
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 992.1743
-        y: 657.6146
+        x: 1083
+        y: 620
         width: 160
         height: 30
     - id: 13
@@ -3272,11 +3236,11 @@ MonoBehaviour:
         value: "\u0421\u043F\u0443\u0441\u0442\u0438\u0442\u044C\u0441\u044F | ClimbDownTheWell
           Link 8"
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 1
         type: 5
@@ -3288,15 +3252,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: "\u0421\u043F\u0443\u0441\u0442\u0438\u0442\u044C\u0441\u044F "
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Audio Files
         value: '[]'
         type: 0
@@ -3331,11 +3295,11 @@ MonoBehaviour:
       - title: Title
         value: "\u0423\u0439\u0442\u0438 | GoAway Link 8"
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Description
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Actor
         value: 1
         type: 5
@@ -3347,15 +3311,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Dialogue Text
         value: "\u0423\u0439\u0442\u0438 "
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Sequence
         value: 
         type: 0
-        typeString: CustomFieldType_Text
+        typeString: 
       - title: Audio Files
         value: '[]'
         type: 0
@@ -3425,9 +3389,15 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 15
+        destinationConversationID: 4
+        destinationDialogueID: 0
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -3435,8 +3405,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1486.9092
-        y: 968.6363
+        x: 1596
+        y: 805
         width: 160
         height: 30
     - id: 16
@@ -3478,9 +3448,15 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 16
+        destinationConversationID: 4
+        destinationDialogueID: 0
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -3488,13 +3464,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1947.6362
-        y: 979.54535
+        x: 1764
+        y: 805
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 572.19214, y: 152.85715}
-    canvasZoom: 0.7000003
+    canvasScrollPosition: {x: 582.87573, y: 59.340668}
+    canvasZoom: 0.9100001
   syncInfo:
     syncActors: 0
     syncItems: 0
@@ -3507,7 +3483,6 @@ MonoBehaviour:
   templateJson: '{"treatItemsAsQuests":true,"actorFields":[{"title":"Name","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"IsPlayer","value":"False","type":2,"typeString":"CustomFieldType_Boolean"}],"itemFields":[{"title":"Name","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Is
     Item","value":"True","type":2,"typeString":"CustomFieldType_Boolean"}],"questFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Success
     Description","value":"","type":0,"typeString":""},{"title":"Failure Description","value":"","type":0,"typeString":""},{"title":"State","value":"unassigned","type":0,"typeString":""},{"title":"Is
-    Item","value":"False","type":2,"typeString":"CustomFieldType_Boolean"}],"locationFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""}],"variableFields":[{"title":"Name","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Initial
-    Value","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"}],"conversationFields":[{"title":"Title","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Actor","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"0","type":5,"typeString":"CustomFieldType_Actor"}],"dialogueEntryFields":[{"title":"Title","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Actor","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Menu
-    Text","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Dialogue
-    Text","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Sequence","value":"","type":0,"typeString":"CustomFieldType_Text"}],"actorPrimaryFieldTitles":[],"itemPrimaryFieldTitles":[],"questPrimaryFieldTitles":[],"locationPrimaryFieldTitles":[],"variablePrimaryFieldTitles":[],"conversationPrimaryFieldTitles":[],"dialogueEntryPrimaryFieldTitles":[],"npcLineColor":{"r":1.0,"g":0.0,"b":0.0,"a":1.0},"pcLineColor":{"r":0.0,"g":0.0,"b":1.0,"a":1.0},"repeatLineColor":{"r":0.5,"g":0.5,"b":0.5,"a":1.0}}'
+    Item","value":"False","type":2,"typeString":"CustomFieldType_Boolean"}],"locationFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""}],"variableFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Initial
+    Value","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""}],"conversationFields":[{"title":"Title","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Actor","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"0","type":5,"typeString":"CustomFieldType_Actor"}],"dialogueEntryFields":[{"title":"Title","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Actor","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Menu
+    Text","value":"","type":0,"typeString":""},{"title":"Dialogue Text","value":"","type":0,"typeString":""},{"title":"Sequence","value":"","type":0,"typeString":""}],"actorPrimaryFieldTitles":[],"itemPrimaryFieldTitles":[],"questPrimaryFieldTitles":[],"locationPrimaryFieldTitles":[],"variablePrimaryFieldTitles":[],"conversationPrimaryFieldTitles":[],"dialogueEntryPrimaryFieldTitles":[],"npcLineColor":{"r":1.0,"g":0.0,"b":0.0,"a":1.0},"pcLineColor":{"r":0.0,"g":0.0,"b":1.0,"a":1.0},"repeatLineColor":{"r":0.5,"g":0.5,"b":0.5,"a":1.0}}'
