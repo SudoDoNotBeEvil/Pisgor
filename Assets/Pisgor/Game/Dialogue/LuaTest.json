@@ -1,0 +1,81 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Commie: Greetings, young fella!\n\n[[Hello |WDYHFM]]\n[[*JustLeave* |Leve]]\n\n\nConditions:\n(CurrentQuestState(\"LuaTest\") ~= \"greeted\")\n\nScript:\n(SetQuestState(\"OpenTheSewer\",\"greeted\"))\n",
+      "links": [
+        {
+          "name": "Hello |WDYHFM",
+          "link": "Hello |WDYHFM",
+          "broken": true
+        },
+        {
+          "name": "*JustLeave* |Leve",
+          "link": "*JustLeave* |Leve",
+          "broken": true
+        }
+      ],
+      "name": "Greeting",
+      "pid": "1",
+      "position": {
+        "x": "800",
+        "y": "350"
+      }
+    },
+    {
+      "text": "Commie: Oh, nice! Give me that now!\nIn exchange I'll give you... A bucket!\n\nConditions:\n(CurrentQuestState(\"LuaTest\") ~= \"greeted\")\n\nScript:\n(SetQuestState(\"OpenTheSewer\",\"Success\"))",
+      "name": "Crowbar",
+      "pid": "2",
+      "position": {
+        "x": "800",
+        "y": "725"
+      }
+    },
+    {
+      "text": "What the heck wrong with you?! GTFO!",
+      "name": "Bucket",
+      "pid": "3",
+      "position": {
+        "x": "975",
+        "y": "725"
+      }
+    },
+    {
+      "text": "Commie: What do you have for me today?\n\n[[Here is a crowbar |Crowbar]]\n[[Here is a bucket |Bucket]]\n\nConditions:\n(CurrentQuestState(\"LuaTest\") ~= \"greeted\")\n",
+      "links": [
+        {
+          "name": "Here is a crowbar |Crowbar",
+          "link": "Here is a crowbar |Crowbar",
+          "broken": true
+        },
+        {
+          "name": "Here is a bucket |Bucket",
+          "link": "Here is a bucket |Bucket",
+          "broken": true
+        }
+      ],
+      "name": "WDYHFM",
+      "pid": "4",
+      "position": {
+        "x": "875",
+        "y": "550"
+      }
+    },
+    {
+      "text": "",
+      "name": "Leve",
+      "pid": "5",
+      "position": {
+        "x": "675",
+        "y": "550"
+      }
+    }
+  ],
+  "name": "PisgorLuaTest",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.5.1",
+  "ifid": "ABCEB928-E2A5-4F74-A52E-8FF35C789B71"
+}
+
