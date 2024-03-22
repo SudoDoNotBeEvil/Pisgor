@@ -4038,8 +4038,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1342.3098
-        y: 569.06726
+        x: 1344.468
+        y: 546.0457
         width: 160
         height: 30
     - id: 8
@@ -4150,7 +4150,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: '(PlayerHasItem("Item_Bucket")) '
-      userScript: '(DestroyItem("Item_Bucket")) '
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4210,8 +4210,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 480.86945, y: 449.48456}
-    canvasZoom: 0.97
+    canvasScrollPosition: {x: 588.0228, y: 38.97345}
+    canvasZoom: 0.9100001
   syncInfo:
     syncActors: 0
     syncItems: 0
