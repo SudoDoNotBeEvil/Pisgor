@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemName: Bucket
   _itemDescription: JustAnEmptyBucket
-  _sprite: {fileID: 21300000, guid: a7e775a4f58f9d149862084a49b15588, type: 3}
-  _icon: {fileID: 21300000, guid: a7e775a4f58f9d149862084a49b15588, type: 3}
+  _sprite: {fileID: 21300000, guid: 0c9929f69cc734fdd8f5dbc5784231ca, type: 3}
+  _icon: {fileID: 21300000, guid: 0c9929f69cc734fdd8f5dbc5784231ca, type: 3}

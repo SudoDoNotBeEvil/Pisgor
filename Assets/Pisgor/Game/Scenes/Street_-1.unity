@@ -380,6 +380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trigger
       objectReference: {fileID: 0}
+    - target: {fileID: 3537886389334366578, guid: fb6972d373878f747a8996f678e48d29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25189552
@@ -459,6 +463,10 @@ PrefabInstance:
     - target: {fileID: 3537886389334366589, guid: fb6972d373878f747a8996f678e48d29, type: 3}
       propertyPath: _onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537886389334366590, guid: fb6972d373878f747a8996f678e48d29, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -824,6 +832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ItemSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 4467091800266600743, guid: 22a746c0d5729354da628aa2e72f2c0e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1026,11 +1038,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440585386377664374, guid: 2ce56d23ccee93948a930805b215d740, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.77
+      value: -0.07319832
       objectReference: {fileID: 0}
     - target: {fileID: 440585386377664374, guid: 2ce56d23ccee93948a930805b215d740, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.8
+      value: -1.9300001
       objectReference: {fileID: 0}
     - target: {fileID: 440585386377664374, guid: 2ce56d23ccee93948a930805b215d740, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1056,13 +1068,25 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: de885e410068b46bd803ed19e43a5394, type: 3}
+    - target: {fileID: 6582102366342307479, guid: 2ce56d23ccee93948a930805b215d740, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031645358383191664, guid: 2ce56d23ccee93948a930805b215d740, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031645358383191664, guid: 2ce56d23ccee93948a930805b215d740, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7140580293869102014, guid: 2ce56d23ccee93948a930805b215d740, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.73
+      value: -12.36
       objectReference: {fileID: 0}
     - target: {fileID: 7140580293869102014, guid: 2ce56d23ccee93948a930805b215d740, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.31
+      value: -3.15
       objectReference: {fileID: 0}
     - target: {fileID: 7140580293869102014, guid: 2ce56d23ccee93948a930805b215d740, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1095,6 +1119,14 @@ PrefabInstance:
     - target: {fileID: 7140580293869102014, guid: 2ce56d23ccee93948a930805b215d740, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172460536653066756, guid: 2ce56d23ccee93948a930805b215d740, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172460536653066756, guid: 2ce56d23ccee93948a930805b215d740, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1719,16 +1751,28 @@ PrefabInstance:
       value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7513
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7513
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7513
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.03
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.0000000037253
       objectReference: {fileID: 0}
     - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1757,6 +1801,14 @@ PrefabInstance:
     - target: {fileID: 3537886389334366579, guid: fb6972d373878f747a8996f678e48d29, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537886389334366588, guid: fb6972d373878f747a8996f678e48d29, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537886389334366588, guid: fb6972d373878f747a8996f678e48d29, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.13
       objectReference: {fileID: 0}
     - target: {fileID: 3537886389334366589, guid: fb6972d373878f747a8996f678e48d29, type: 3}
       propertyPath: _requiredItem
@@ -1797,6 +1849,14 @@ PrefabInstance:
     - target: {fileID: 3537886389334366589, guid: fb6972d373878f747a8996f678e48d29, type: 3}
       propertyPath: _onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537886389334366590, guid: fb6972d373878f747a8996f678e48d29, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: de885e410068b46bd803ed19e43a5394, type: 3}
+    - target: {fileID: 3537886389334366590, guid: fb6972d373878f747a8996f678e48d29, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

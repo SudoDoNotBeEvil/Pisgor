@@ -1239,7 +1239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698dfb45b1ceb024cafedf7329b45544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _so: {fileID: 11400000, guid: 260339b507e4f4c7ca4ff4f592ec1dc5, type: 2}
+  _so: {fileID: 11400000, guid: b0f6c6fc81e471d4fbc618b993c6228a, type: 2}
   _itemPrefab: {fileID: 365038194036401077, guid: bf1a6012f5e754e419f38e4a32a4eea5, type: 3}
   _hasSpawned: 0
 --- !u!4 &1595551043
@@ -1251,7 +1251,7 @@ Transform:
   m_GameObject: {fileID: 1450733550}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.2, y: -4.84, z: -9.956779}
+  m_LocalPosition: {x: 11.94, y: -3.91, z: -9.956779}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1545,6 +1545,9 @@ MonoBehaviour:
       m_Calls: []
   _triggerOnEnter: 1
   _triggerOnUse: 1
+  _requiresItem: 0
+  _destroyRequiredItem: 1
+  _requiredItem: {fileID: 0}
 --- !u!212 &1820602753
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1770,6 +1773,9 @@ MonoBehaviour:
       m_Calls: []
   _triggerOnEnter: 1
   _triggerOnUse: 1
+  _requiresItem: 0
+  _destroyRequiredItem: 1
+  _requiredItem: {fileID: 0}
 --- !u!212 &1944772534
 SpriteRenderer:
   m_ObjectHideFlags: 0

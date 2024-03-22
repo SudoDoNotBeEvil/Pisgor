@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0819b087928e2148aa535af85820565, type: 3}
   m_Name: DefaultMovementSO
   m_EditorClassIdentifier: 
-  runSpeed: 10
+  runSpeed: 9
   walkSpeed: 3
   crouchSpeed: 1
-  jumpForce: 20
+  jumpForce: 15
   groundCheckRadius: 0.2
-  airSpeed: 6
+  airSpeed: 4
   groundControl: 0.1
   airControl: 0.3
