@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,12 +13,15 @@ namespace Pisgor.Inventories {
         public bool CanPickup(ItemSO so) {
             return _currentItem == null;
         }
+        public bool CanPickup() {
+            return _currentItem == null;
+        }
 
         IEnumerator Start() {
             for(int i=0; i<3; i++)
                 yield return new WaitForFixedUpdate();
 
-            PersistentInventory.Instance.TryLoadItem(this);
+            PersistentInventory.Instance.TrySpawnAndPickup(this);
         }
 
         public void Pickup(Item item) {
@@ -34,6 +38,17 @@ namespace Pisgor.Inventories {
             PersistentInventory.Instance.SetHoldingItem(item);
         }
 
+        public void VocalDestroyItem() { 
+            if(_currentItem == null) 
+                return;
+
+            var item = _currentItem;
+            item.GetComponent<SpawnedObject_Item>().enabled = false;
+            Destroy(item.GetComponent<SpawnedObject_Item>());
+            Drop(silent: false);
+            Destroy(item.gameObject);
+        }
+
         public void SilentDestroyItem() { 
             if (_currentItem == null) 
                 return;
@@ -43,6 +58,22 @@ namespace Pisgor.Inventories {
             Destroy(item.GetComponent<SpawnedObject_Item>());
             Drop(silent: true);
             Destroy(item.gameObject);
+        }
+
+        internal bool TryVocalDestroyItem(string itemName) {
+            if (_currentItem == null || _currentItem.SO.name != itemName)
+                return false;
+
+            VocalDestroyItem();
+            return true;
+        }
+
+        internal bool TrySilentDestroyItem(string itemName) {
+            if (_currentItem == null || _currentItem.SO.name != itemName)
+                return false;
+
+            SilentDestroyItem();
+            return true;
         }
 
         public void Drop(bool silent = false) { 
@@ -62,5 +93,7 @@ namespace Pisgor.Inventories {
             _currentItem.SetHolding(false);
             _currentItem = null;
         }
+
+
     }
 }

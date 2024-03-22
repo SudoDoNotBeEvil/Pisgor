@@ -146,7 +146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5521482060617327139, guid: 062f06add783b5c4c884010d452e5c08, type: 3}
       propertyPath: m_Name
-      value: InventorySave
+      value: PersistentInventory
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -17,6 +17,11 @@ namespace Pisgor.Inventories {
 
     public class PersistentInventory : PixelCrushers.Saver {
         //singleton
+        public string testString = "initial";
+        public ItemSO CurrentItemSO { get; private set; }
+        public bool HasItem => CurrentItemSO != null;
+        [SerializeField] Item _itemPrefab;
+
         public static PersistentInventory Instance { get; private set; }
 
         private void Awake() {
@@ -33,11 +38,6 @@ namespace Pisgor.Inventories {
             Instance = this;
         }
 
-        public string testString = "initial";
-        public ItemSO CurrentItemSO { get; private set; }
-        public bool HasItem => CurrentItemSO != null;
-        [SerializeField] Item _itemPrefab;
-
         internal void SetHoldingItem(Item item) {
             UnityEngine.Debug.Log("PersInv: item picked");
 
@@ -51,7 +51,37 @@ namespace Pisgor.Inventories {
             CurrentItemSO = null;
         }
 
-        internal bool TryLoadItem(Inventory inventory) {
+        internal bool TrySpawnAndPickup(string itemName) {
+            if (HasItem) return false;
+
+            //load from ItemSO resources
+            var itemSO = Resources.Load<ItemSO>($"Items/{itemName}");
+            if (itemSO == null) {
+                UnityEngine.Debug.LogError($"ItemSO {itemName} not found");
+                return false;
+            }
+
+            var player = GameObject.FindGameObjectWithTag("Player");
+            if (player == null) {
+                UnityEngine.Debug.LogError("No player found");
+                return false;
+            }
+
+            var inv = player.GetComponent<Inventory>();
+            if (inv == null) {
+                UnityEngine.Debug.LogError("No inventory found");
+                return false;
+            }
+
+            if (!inv.CanPickup(itemSO))
+                return false;
+
+            CurrentItemSO = itemSO;
+
+            return TrySpawnAndPickup(inv);
+        }
+
+        internal bool TrySpawnAndPickup(Inventory inventory) {
             if (!HasItem) return false;
 
             var instance = Instantiate(_itemPrefab, transform.position, Quaternion.identity);
@@ -79,6 +109,44 @@ namespace Pisgor.Inventories {
             UnityEngine.Debug.Log($"PersistentInventory.Save: >>{data.GetJson()}<<");
 
             return data.GetJson();
+        }
+
+        internal bool TryDestroyPlayerItem(string itemName) {
+            //find with tag "player"
+            var player = GameObject.FindGameObjectWithTag("Player");
+            if (player == null) {
+                UnityEngine.Debug.LogError("No player found");
+                return false;
+            }
+            
+            return player.GetComponent<Inventory>().TryVocalDestroyItem(itemName);
+        }
+
+        internal bool TryGiveItem(string itemName) {
+            //find with tag "player"
+            var player = GameObject.FindGameObjectWithTag("Player");
+            if (player == null) {
+                UnityEngine.Debug.LogError("No player found");
+                return false;
+            }
+
+            var inv = player.GetComponent<Inventory>();
+            if (inv == null) {
+                UnityEngine.Debug.LogError("No inventory found");
+                return false;
+            }
+
+            if (!inv.CanPickup()) {
+                UnityEngine.Debug.LogError("Cannot pickup");
+                return false;
+            }
+
+            /*
+            var item = Instantiate(_itemPrefab, player.transform.position, Quaternion.identity);
+            item.SetSO(ItemSO.Get(itemName));
+            inv.Pickup(item);
+            */
+            return true;
         }
         #endregion
     }
