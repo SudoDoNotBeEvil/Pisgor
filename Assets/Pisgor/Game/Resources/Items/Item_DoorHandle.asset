@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemName: door handle
   _itemDescription: door handle
-  _sprite: {fileID: 21300000, guid: 2974a63dca34fad46b5178afe0bae5c1, type: 3}
-  _icon: {fileID: 21300000, guid: 2974a63dca34fad46b5178afe0bae5c1, type: 3}
+  _sprite: {fileID: 21300000, guid: cde8962399a7c42e0a44fdad99051bca, type: 3}
+  _icon: {fileID: 21300000, guid: cde8962399a7c42e0a44fdad99051bca, type: 3}
