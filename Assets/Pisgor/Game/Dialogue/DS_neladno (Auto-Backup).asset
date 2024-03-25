@@ -4240,8 +4240,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 476.3959, y: 161.58412}
-    canvasZoom: 0.670239
+    canvasScrollPosition: {x: 681.1211, y: 80.97673}
+    canvasZoom: 1.0902386
   - id: 6
     fields:
     - title: Title
@@ -5035,8 +5035,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 680.0022, y: 2.2736816}
-    canvasZoom: 0.87964016
+    canvasScrollPosition: {x: 630.827, y: 40.703102}
+    canvasZoom: 0.9996401
   - id: 8
     fields:
     - title: Title
@@ -5901,8 +5901,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 517.30786, y: 122.673416}
-    canvasZoom: 0.86844385
+    canvasScrollPosition: {x: 532.27844, y: 59.872494}
+    canvasZoom: 0.95844376
   - id: 9
     fields:
     - title: Title
@@ -6596,8 +6596,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 32.29086, y: 201.59886}
-    canvasZoom: 0.5375002
+    canvasScrollPosition: {x: 651.81647, y: 44.868744}
+    canvasZoom: 1.0474998
   - id: 10
     fields:
     - title: Title
@@ -7191,7 +7191,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 517.2198, y: 80.48663}
+    canvasScrollPosition: {x: 616.63196, y: 19.241028}
     canvasZoom: 0.9355001
   - id: 11
     fields:
@@ -7321,7 +7321,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -7414,9 +7414,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: '
-
-        SetQuestState("LuaTest","success")'
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -7761,9 +7759,15 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 11
+        originDialogueID: 9
+        destinationConversationID: 11
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
       conditionsString: 
-      userScript: 
+      userScript: SetQuestState("LuaTest","success")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -7796,9 +7800,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u0422\u044B \u0437\u043D\u0430\u0435\u0448\u044C \u0447\u0442\u043E
-          \u0434\u0438\u043D\u043E\u0437\u0430\u0432\u0440\u044B \u043D\u0430 \u0441\u0430\u043C\u043E\u043C
-          \u0434\u0435\u043B\u0435 \u043D\u0435 \u0432\u044B\u043C\u0435\u0440\u043B\u0438?"
+        value: "\u0422\u043E\u0433\u0434\u0430 \u0431\u044B\u0441\u0442\u0440\u0435\u0435
+          \u0441\u0430\u0434\u0438\u0442\u044C \u0432 \u041D\u041B\u041E!"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -8015,7 +8018,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u041D\u0410 \u041C\u041E\u042E!!!!!"
+        value: "\u041D\u0410 \u041C\u041E\u042E!!!!! \u0418 \u0442\u0435\u043F\u0435\u0440\u044C
+          \u0442\u0430\u043C \u043F\u043E\u043B\u043D\u044B\u0439 \u0425\u0410\u041E\u0421!
+          \u041E\u043D\u0438 \u0443\u043D\u0438\u0447\u0442\u043E\u0436\u0438\u043B\u0438
+          \u043F\u043E\u0447\u0442\u0438 \u0432\u0441\u0435, \u0442\u044B \u0434\u043E\u043B\u0436\u0435\u043D
+          \u043C\u043D\u0435 \u043F\u043E\u043C\u043E\u0447\u044C!"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -8029,7 +8036,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 11
+        originDialogueID: 14
+        destinationConversationID: 11
+        destinationDialogueID: 15
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -8041,9 +8054,66 @@ MonoBehaviour:
         y: 876.5947
         width: 160
         height: 30
+    - id: 15
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: "\u041E \u0433\u043E\u0441\u043F\u0430\u0434\u0438, \u043A\u0430\u043A\u043E\u0439
+          \u0438\u0434\u0438\u043E\u0442\u0438\u0437\u043C. \u041F\u043E\u0439\u0434\u0435\u043C
+          \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u043C"
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 11
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 11
+        originDialogueID: 15
+        destinationConversationID: 11
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: SetQuestState("LuaTest","success")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1181.1523
+        y: 926.5947
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 330.9947, y: 388.60257}
-    canvasZoom: 0.5934997
+    canvasScrollPosition: {x: 658.9363, y: 58.967056}
+    canvasZoom: 1.0339999
   syncInfo:
     syncActors: 0
     syncItems: 0
