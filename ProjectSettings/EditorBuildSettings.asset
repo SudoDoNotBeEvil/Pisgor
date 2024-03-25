@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Pisgor/Game/Scenes/Street_1.unity
+    guid: e2835cc3bd89e914f887f35b1e2b60f5
+  - enabled: 1
     path: Assets/Pisgor/Game/Scenes/Beach.unity
     guid: 1f7e1d884223047c5be47fc24c49bb2c
   - enabled: 1
@@ -23,9 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Pisgor/Game/Scenes/Street_0_start.unity
     guid: 2ebd5b9841afc7d47afb9c5ec4d4b34c
-  - enabled: 1
-    path: Assets/Pisgor/Game/Scenes/Street_1.unity
-    guid: e2835cc3bd89e914f887f35b1e2b60f5
   - enabled: 1
     path: Assets/Pisgor/Game/Scenes/Street_2.unity
     guid: 528613c8e6b764c06b7899d9f59959d0
@@ -53,19 +53,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Pisgor/Game/Scenes/TestScenes/TestScene_1.unity
     guid: fee73040796f58c47a2927974017cf0e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Pisgor/Game/Scenes/TestScenes/TestScene_2.unity
     guid: bc6c2b6700e7b8c49b269493902d3959
-  - enabled: 1
+  - enabled: 0
     path: Assets/Pisgor/Game/Scenes/TestScenes/TestScene_3.unity
     guid: 6aeaaf54f08ebcb48a0c3a4c3b34c9f0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Pisgor/Game/Scenes/TestScenes/TestScene_4.unity
     guid: b3d0a17ff09f9684da399ff33de46f69
-  - enabled: 1
+  - enabled: 0
     path: Assets/Plugins/Pixel Crushers/Dialogue System/Demo/Scenes/DemoScene2.unity
     guid: d94b3c97c9dfe0d4e8ff547bb0406174
-  - enabled: 1
+  - enabled: 0
     path: Assets/Plugins/Pixel Crushers/Dialogue System/Demo/Scenes/DemoScene1.unity
     guid: 955abf6400389cf4f8e68ac194db83e0
   m_configObjects: {}
