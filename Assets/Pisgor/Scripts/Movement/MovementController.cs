@@ -7,7 +7,6 @@ using UnityEngine;
 namespace Pisgor.Movement { //!!!!PELIGRO!!!!! rename namespace
 
     [RequireComponent(typeof(Rigidbody2D))]
-    [RequireComponent(typeof(Animator))]
     public class MovementController : MonoBehaviour {
         [SerializeField] MovementSO _movementSO = null;
 
@@ -21,14 +20,16 @@ namespace Pisgor.Movement { //!!!!PELIGRO!!!!! rename namespace
 
         private Vector3 currentVelocity = Vector3.zero;
 
-        private Animator _animator;
+        [SerializeField] Animator _animator;
 
         private float _speed = 0.0f;
         private float _kControl = 0.0f;
 
         void Awake() {
             _rb = GetComponent<Rigidbody2D>();
-            _animator = GetComponent<Animator>();
+
+            if(_animator == null)
+                Debug.LogError("Animator is not assigned in " + gameObject.name);
 
             if (_groundCheckCenter == null)
                 Debug.LogError("GroundCheckCenter is not assigned in " + gameObject.name);
