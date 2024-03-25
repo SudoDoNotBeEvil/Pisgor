@@ -4,7 +4,8 @@ using UnityEngine;
 
 namespace Pisgor.Interactive {
     public class TwoStateObject : MonoBehaviour {
-        public bool State { get; private set; } = false;
+        private bool _bState = false;
+        public bool State { get => _bState; private set => _bState = value;}
 
         [SerializeField] GameObject _objectTrue = null;
         [SerializeField] GameObject _objectFalse = null;
