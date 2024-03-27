@@ -1252,7 +1252,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 0}
+  selectedDatabase: {fileID: 11400000, guid: fa2d10efe1987ec4b930b44f5c1136a2, type: 2}
 --- !u!212 &1260646287
 SpriteRenderer:
   m_ObjectHideFlags: 0

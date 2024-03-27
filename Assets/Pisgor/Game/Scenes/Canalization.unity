@@ -249,6 +249,10 @@ PrefabInstance:
       propertyPath: m_spawnpointNameInDestinationScene
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4164821267932873339, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6755605352385959742, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.9383562
