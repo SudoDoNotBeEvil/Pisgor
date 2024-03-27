@@ -188,36 +188,6 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-  - id: 3
-    fields:
-    - title: Name
-      value: Party
-      type: 0
-      typeString: 
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: 
-    - title: Success Description
-      value: 
-      type: 0
-      typeString: 
-    - title: Failure Description
-      value: 
-      type: 0
-      typeString: 
-    - title: State
-      value: unassigned
-      type: 0
-      typeString: 
-    - title: Is Item
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
   locations: []
   variables:
   - id: 1
@@ -3800,14 +3770,14 @@ MonoBehaviour:
       conditionsString: 
       userScript: '
 
-        SetQuestState("Party","success")'
+        SetQuestState("LuaTest","success")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
         x: 740.67194
-        y: 560.03986
+        y: 563.02386
         width: 160
         height: 30
     - id: 3
@@ -4030,7 +4000,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: (SetQuestState("Party","greeted"))
+      userScript: (SetQuestState("LuaTest","greeted"))
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4258,7 +4228,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: (CurrentQuestState("Party") == "success")
+      conditionsString: (CurrentQuestState("LuaTest") == "success")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -4270,8 +4240,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 473.07138, y: 89.56001}
-    canvasZoom: 0.84553474
+    canvasScrollPosition: {x: 681.1211, y: 80.97673}
+    canvasZoom: 1.0902386
   - id: 6
     fields:
     - title: Title
@@ -5065,8 +5035,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 680.0022, y: 2.2736816}
-    canvasZoom: 0.87964016
+    canvasScrollPosition: {x: 630.827, y: 40.703102}
+    canvasZoom: 0.9996401
   - id: 8
     fields:
     - title: Title
@@ -5931,8 +5901,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 517.30786, y: 122.673416}
-    canvasZoom: 0.86844385
+    canvasScrollPosition: {x: 532.27844, y: 59.872494}
+    canvasZoom: 0.95844376
   - id: 9
     fields:
     - title: Title
@@ -6626,8 +6596,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 32.29086, y: 201.59886}
-    canvasZoom: 0.5375002
+    canvasScrollPosition: {x: 651.81647, y: 44.868744}
+    canvasZoom: 1.0474998
   - id: 10
     fields:
     - title: Title
@@ -7221,7 +7191,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 517.2198, y: 80.48663}
+    canvasScrollPosition: {x: 616.63196, y: 19.241028}
     canvasZoom: 0.9355001
   - id: 11
     fields:
@@ -8137,13 +8107,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1337.1741
-        y: 743.20074
+        x: 1181.1523
+        y: 926.5947
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 162.4035, y: 0}
-    canvasZoom: 0.66742766
+    canvasScrollPosition: {x: 658.9363, y: 58.967056}
+    canvasZoom: 1.0339999
   syncInfo:
     syncActors: 0
     syncItems: 0

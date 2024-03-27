@@ -5,7 +5,9 @@ namespace Pisgor.Interactive {
     [RequireComponent(typeof(TwoStateObject))]
     public class TwoStateObjectSaver : Saver {
         public override void ApplyData(string s) {
+            Debug.Log(s);
             if (string.IsNullOrEmpty(s)) return;
+
             GetComponent<TwoStateObject>().SetState(s == "1");
         }
 
