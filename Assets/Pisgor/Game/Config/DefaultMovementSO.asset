@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0819b087928e2148aa535af85820565, type: 3}
   m_Name: DefaultMovementSO
   m_EditorClassIdentifier: 
-  runSpeed: 9
+  runSpeed: 13
   walkSpeed: 3
   crouchSpeed: 1
   jumpForce: 18
