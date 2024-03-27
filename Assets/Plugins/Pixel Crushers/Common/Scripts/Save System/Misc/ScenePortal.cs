@@ -65,6 +65,7 @@ namespace PixelCrushers
 
         protected void LoadScene()
         {
+            Debug.Log($"tp to: {destinationSceneName + "@" + spawnpointNameInDestinationScene}");
             SaveSystem.LoadScene(string.IsNullOrEmpty(spawnpointNameInDestinationScene) ? destinationSceneName : destinationSceneName + "@" + spawnpointNameInDestinationScene);
         }
 

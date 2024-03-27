@@ -331,7 +331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3622871500570190401, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
       propertyPath: m_spawnpointNameInDestinationScene
-      value: 2
+      value: PortalFromStreet1
       objectReference: {fileID: 0}
     - target: {fileID: 4164821267932873339, guid: a89d7dcfeee8cf240aff4ebfe9e2a501, type: 3}
       propertyPath: m_Enabled
@@ -718,11 +718,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2511965685045666117, guid: acb73b77ed2d45343812e660bd6dff5e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.3
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 2511965685045666117, guid: acb73b77ed2d45343812e660bd6dff5e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.8
+      value: 3.04
       objectReference: {fileID: 0}
     - target: {fileID: 2511965685045666117, guid: acb73b77ed2d45343812e660bd6dff5e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -755,6 +755,10 @@ PrefabInstance:
     - target: {fileID: 2511965685045666117, guid: acb73b77ed2d45343812e660bd6dff5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421513839298247849, guid: acb73b77ed2d45343812e660bd6dff5e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8991153223811143030, guid: acb73b77ed2d45343812e660bd6dff5e, type: 3}
       propertyPath: m_key
@@ -1233,7 +1237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1307569716}
   m_Layer: 0
-  m_Name: 0
+  m_Name: PortalFromStreet0
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
