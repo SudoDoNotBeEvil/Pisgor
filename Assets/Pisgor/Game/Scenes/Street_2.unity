@@ -553,6 +553,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4466518599903586039, guid: acb73b77ed2d45343812e660bd6dff5e, type: 3}
+      propertyPath: orthographic size
+      value: 8.72
+      objectReference: {fileID: 0}
     - target: {fileID: 8991153223811143030, guid: acb73b77ed2d45343812e660bd6dff5e, type: 3}
       propertyPath: m_key
       value: spwnmngrStreet_2_0001fx
